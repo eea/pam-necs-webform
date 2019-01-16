@@ -1,0 +1,349 @@
+{
+  "Labels": {
+    "Webform": {
+      "PamNumber": "PaM number",
+      "CreatePam": "Create new PaM",
+      "Title": "Questionnaire for reporting on Policies and Measures under the Directive (EU) 2016/2284 of the European Parliament and of the Council on the reduction of national emission of certain atmospheric pollutants (NEC Directive)",
+      "FormTitle": "Policies and Measures (PaMs)",
+      "TitlePlaceholder": "Enter Title",
+      "Annex": "ANNEX XI",
+      "Add": "Add",
+      "Remove": "Remove",
+      "AddSingle": "Add Single",
+      "AddGroup": "Add Package",
+      "Loading": "Loading...",
+      "Complete": "Complete PaM/Package",
+      "Group": "Package",
+      "Single": "Single",
+      "PleaseUpdate": "Please Update individual PaM field",      
+      "Notes": "Notes",
+      "Type": "Type",
+      "Name": "Entity Name",
+      "Yes": "Yes",
+      "No": "No",
+      "Sector": "Sector",
+      "Save": "Save Webform",
+      "Print": "Print Preview",
+      "Close": "Close Webform",
+      "Table1": "Table 1",
+      "Guidelines": "Reporting guidelines"
+    },
+    "Overview": {
+      "label": "Overview",
+      "heading": "Overview Table",
+      "PamNumber": "PaM number",
+      "Group": "PaM or package of PaMs",
+      "Title": "Name of policy or measure",
+      "new_table": "Create Table",
+      "edit_table": "Edit Table",      
+      "delete_nec": "Delete"
+    },
+    "Table1": {
+      "Tab": "Table1",
+      "Id": "PaM name (M)",
+      "TitleLocal": "PaM name in original language",
+      "Asterisk": "* Mandatory reporting requirements.",
+      "yes": "Yes",
+      "no": "No",
+      "BelongsToPackage": {
+        "label": "Is the PaM part of a package?"
+      },
+      "isGroup": {
+        "label": "Single or a package of PaMs?",
+        "placeholder": "",
+        "list": {
+          "single": "Single",
+          "group": "Package"
+        }
+      },
+      "PolicyGroup": {
+        "label": "Which policies or measures does it cover?",
+        "Single_PAM": "Single PaM"
+      },
+      "ReportedAlready": {
+        "label": "Does the PaM relate to other policies?"
+      },
+      "Sectors": {
+        "label": "Sector/objective affected (M)"
+      },
+      "Pollutants": {
+        "label": "Affected NECD pollutant (M)"
+      },
+      "EmissionReductions": {
+        "label": "Estimation of Costs (if the PaM is part of a package and no estimations of reduction is available please report 0)"
+      },
+      "QuantifiedEmissionReductions": {
+        "label": "Quantified emission reductions (M): (if the PaM is part of a package and no estimations of reduction is available please report 0)"
+      },
+      "InformationImpactAirQuality" : {
+        "label": "Is information about impacts on air quality available?"
+      },
+      "AdoptionPlannedYear": {
+        "label" : "Currently planned year of adoption (M)"
+      },
+      "AirQualityImpact": {
+        "label": "Where available, impacts on air quality (reference can also be made to reccomended air quality objectives by the WHO) and environment"
+      },
+      "AgriculturalRelated": {
+        "label": "Agricultural related?"
+      },
+      "Agriculture": {
+      "NationalAirPollutionControl": {
+        "label": "is the Pam included in the national air pollution control programme?"
+      },
+      "MeasuresAmmoniaControlQuestion": {
+        "label": "A) Measures to control ammonia emissions",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "AmmoniaEmissionsControlPractices": {
+        "label": "Measures to control ammonia emissions",
+        "text": "Does the PAM include the establishment of a national advisory code of good agricultural practices to control ammonia, taking into account the UNECE Framework Code for Good Agricultural Practice for Reducing Ammonia Emissions of 2014, covering at least the following items?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "AmmoniaEmissionsLivestockQuestion": {
+        "label": "Measures to control ammonia emissions",
+        "text": "Does the PAM reduce ammonia emissions from livestock manure?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "AmmoniaEmissionsLivestockBanMonitoredQuestion": {
+        "label": "Measures to control ammonia emissions",
+        "text": "Is the ban monitored and enforced?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "AmmoniaEmissionsLivestockBanExemptionsQuestion": {
+        "label": "Measures to control ammonia emissions",
+        "text": "Are any exemptions to this ban limited to preventive programmes to avoid uncontrolled wildfires, to control pest or to protect biodiversity?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "NationalNitrogenBudgetQuestion": {
+        "text": "Does the PAM include the establishment of a national nitrogen budget to monitor the changes in overall losses of reactive nitrogen from agriculture, including ammonia, nitrous oxide, ammonium, nitrates and nitrites, based on the principles set out in the UNECE Guidance Document on Nitrogen Budgets?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "InorganicFertilisersQuestion": {
+        "text": "Does the PAM reduce ammonia emissions from inorganic fertilisers?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "AmmoniumCarbonateFertilisersQuestion": {
+        "text": "Does the PAM prohibit the use of ammonium carbonate fertilisers?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "FineParticulateMatterEmissionsQuestion": {
+        "label": "B) Emission reduction measures to control emissions of fine particulate matter (PM2.5) and black carbon"
+      },
+      "OpenFieldBurningQuestion": {
+        "text": "Does the PAM ban open field burning of agricultural harvest residue and waste and forest residue?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "OpenFieldBurningBanEnforced": {
+        "text": "Is the ban monitored and enforced?"
+      },
+      "OpenFieldBurningBanExemptions": {
+        "text": "Are any exemptions to this ban limited to preventive programmes to avoid uncontrolled wildfires, to control pest or to protect biodiversity?"
+      },
+      "NationalAdvisoryCodeQuestion": {
+        "text": "Does the PAM include the establishment of a national advisory code of good agricultural practices for the proper management of harvest residue?",
+        "page": "Indicate section/page number in programme",
+        "exactly": {
+          "label": "Has the PaM been applied exactly?"
+        }
+      },
+      "PreventingImpactsSmallFarms": {
+        "label": "C) Preventing impacts on small farms"
+      },
+      "PreventingImpactsSmallFarmsQuestion": {
+        "label": "C) In taking the measures outlined in Sections A and B, Member States shall ensure that impacts on small and micro farms are fully taken into account. Member States may, for instance, exempt small and micro farms from those measures where possible and appropriate in view of the applicable reduction commitments"
+      },
+      "SmallMicroFarmsFullAccountQuestion": {
+        "text": "Does the PAM ensure that impacts on small and micro farms are fully taken into account?"
+      },
+      "SmallMicroFarmsExemptionsQuestion": {
+        "text": "Are small and micro farms exempted from the PAM?"
+      }
+      },
+      "Objective": {
+        "label": "Objective(s)",
+        "placeholder": "Select Objective(s)",
+        "select": "Select Objective(s)",
+        "current": "Objective(s)",
+        "emptySectors": "You need to select at least one Sector to view and select Objectives"
+      },
+      "ObjectiveOther": {
+        "label": "Other Objective(s)",
+        "sectors": "Select sector",
+        "text": "Objective Name"
+      },
+      "ObjectiveQuantified": {
+        "label": "Quantified Objective",
+        "placeholder": ""
+      },
+      "DetailsMethodology": {
+        "label": "Details of the methodology used for analysis (M)",
+        "placeholder": ""
+      },
+      "QualitativeDescriptionUncertaintiesQuestion": {
+        "label": "Is a qualitative description of uncertainties available?",
+        "placeholder": ""
+      },
+      "QualitativeDescriptionUncertainties": {
+        "label": "Qualitative description of uncertainties (M)",
+        "placeholder": ""
+      },
+      "SelectedForAdoption": {
+        "label": "Is PaM selected for adoption?"
+      },
+      "ConsultationComments" : {
+        "label": "Relevant comments arising from consultation(s) in relation to the individual PaM or package of PaMs"
+      },
+      "ReviewTimetable" : {
+        "label": "Currently planned timetable for review (in case different from general update of the national air pollution control programme every four years) (M)",
+        "start": "Start",
+        "finish": "Finish"
+      },
+      "CoherenceQualityObjectives" : {
+        "label": "Coherence of the selected PaMs with air quality objectives at national level and, where appropriate, in neighbouring Member States (M)"
+      },
+      "CoherencePlansProgrammes" : {
+        "label": "Coherence of the selected PaMs with other relevant plans and programmes established by virtue of the requirements set out in national or Union legislation (e.g. national energy and climate plans) (M)"
+      },
+      "Description": {
+        "label": "Short description of PaM (M)",
+        "placeholder": "Type Description"
+      },
+      "PolicyInstrument": {
+        "label": "Type of policy instrument (M)",
+        "placeholder": "Select Policy Instrument",
+        "list": {
+          "Economic": "Economic",
+          "Fiscal": "Fiscal",
+          "Voluntary": "Voluntary/negotiated agreements",
+          "Regulatory": "Regulatory",
+          "Information": "Information",
+          "Education": "Education",
+          "Research": "Research",
+          "Planning": "Planning",
+          "Other": "Other"
+        }
+      },
+      "UnionPolicyRelated": {
+        "label": "Is the policy or measure related to a Union policy"
+      },
+      "UnionPolicy": {
+        "label": "The PaM results from the implementation of a Union Policy",
+        "other": "Other Union Policy",
+        "current": "Current Union Policy list",
+        "otherCurrent": "Current Other Union Policy list"
+      },
+      "ImplementationStatus": {
+        "label": "Status of Implementation",
+        "list": {
+          "Planned": "Planned",
+          "Adopted": "Adopted",
+          "Implemented": "Implementation on-going",
+          "Expired": "Expired (only if the policy or measure has an effect, or is expected to continue to have an effect on greenhouse gas emissions)"
+        },
+        "shortlist": {
+          "Planned": "Planned",
+          "Adopted": "Adopted",
+          "Implemented": "Implementation on-going",
+          "Expired": "Expired",
+          "null": ""
+        }
+      },
+      "ImplementationPeriod": {
+        "label": "Implementation Period (M)",
+        "start": "Start",
+        "finish": "Finish",
+        "comments": "Comment on Implementation Period"
+      },
+      "ProjectionsScenario": {
+        "label": "Projections scenario in which the PaM is included"
+      },
+      "Entities": {
+        "label": "Entities responsible for implementing the policy (M)",
+        "placeholder": "Select Type",
+        "current": "Current entity list",
+        "list": {
+          "null": "",
+          "Government": "National government",
+          "Regional": "Regional entities",
+          "Local": "Local government",
+          "Companies": "Companies / businesses / industrial associations",
+          "Research": "Research institutions",
+          "Other": "Others not listed"
+        }
+      },
+      "Indicators": {
+        "label": "Indicators used to monitor and evaluate progress over time (ex-post or ex-ante)",
+        "current": "Current Indicators list",
+        "desc": "Description",
+        "unit": "Unit",
+        "InterimYearTarget": "Year {{num}}",
+        "InterimTarget": "Value {{num}}"
+      },
+      "Reference": {
+        "label": "Reference to assessments and underpinning technical reports",
+        "Text": "Reference",
+        "Url": "URL"
+      }
+    },
+    "Tooltip": {
+      "MMR" : "Definitions and information on mandatory reporting requirements are stipulated in MMR Art. 13 and MMR implementing regulation Art. 22 and Annex XI.",
+      "Overview": "Numeric values with decimals should be entered using a dot not a comma.",
+      "Group": "A group of PaMs consists of other single PaMs.",
+      "Table1": {
+        "ID": "Use this to order the PaMs to your convenience",
+        "Title": "Fill this table with PaMs and groups of PaMs",
+        "isGroup": "A group of PaMs consists of other single PaMs",
+        "PolicyGroup": "One PaM cannot be part of more than one group",
+        "Sectors": "More than one sector can be selected",
+        "Pollutants": "More than one GHG can be selected",
+        "Objective": "More than one objective can be selected, additional objectives could be added and specified under ‘other’",
+        "QuantifiedObjective": "Include the figure(s) if the objective(s) is (are) quantified",
+        "UnionPolicy": "Union policies are organised by sector that is most likely applicable. The selected ‘Sector(s) affected’ can differ from the sector(s) listed here. More than one Union policy can be selected, additional union policies could be added and specified under ‘other’. Sectors are not listed in alphabetical order.",
+        "ImplementationStatus": "Expired PaMs must be reported in the template only if they have an effect, or they are expected to continue to have an effect on GHG emissions",
+        "ImplementationComments": "Provide any remark on Implementation Period of the PaM",
+        "Entities": "More than one entity can be selected"
+      }
+    },
+    "Validation": {
+      "empty": "This field cannot be empty",
+      "url": "This field requires a valid url e.g http://www.europa.eu or www.europa.eu",
+      "range_number": "This field requires a number between {{min}} and {{max}}",
+      "range_year": "This field requires a year between {{min}} and {{max}}",
+      "range_years": "This field requires a year or a range of years between {{min}} and {{max}}",
+      "positive": "This field requires a number greater than zero",
+      "negative": "This field requires a number less than zero",
+      "number": "This field requires a number",
+      "unique": "This field requires a unique value",
+      "greater_equal_than": "This field must be equal or greater than {{field}}",
+      "match_value": "This field must match {{value}}",
+      "pollutant": "This field cannot be empty and a mandatory pollutant must be selected"
+    }
+  }
+}
