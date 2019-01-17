@@ -58,8 +58,7 @@
   <xs:complexType name="ImplementationType">
     <xs:sequence>
       <xs:element type="xs:string" name="Start"/>
-      <xs:element type="xs:string" name="Status"/>
-      <xs:element type="xs:string" name="Comment"/>
+      <xs:element type="xs:string" name="Comment" minOccurs="0"/>
       <xs:element type="xs:string" name="Finish"/>
     </xs:sequence>
   </xs:complexType>
@@ -129,7 +128,7 @@
   <xs:complexType name="T261Type">
     <xs:sequence>
       <xs:element type="ObjectivesType" name="Objectives" maxOccurs="unbounded" minOccurs="0"/>
-      <xs:element name="PolicyInstruments" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="PolicyInstruments">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="Economic"/>
@@ -146,9 +145,16 @@
         </xs:simpleType>
       </xs:element>
       <xs:element type="ImplementationType" name="Implementation"/>
-      <xs:element type="EntitiesType" name="Entities" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="EntitiesType" name="Entities"/>
       <xs:element type="xs:string" name="DetailsMethodology"/>
-      <xs:element type="xs:string" name="UnionPolicyRelated"/>
+      <xs:element name="UnionPolicyRelated">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
       <xs:element type="UnionPoliciesType" name="UnionPolicies" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="ProjectionsScenario" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
@@ -156,6 +162,7 @@
             <xs:enumeration value="WEM"/>
             <xs:enumeration value="WAM"/>
             <xs:enumeration value="NIP"/>
+            <xs:enumeration value=""/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -226,8 +233,15 @@
   </xs:complexType>
   <xs:complexType name="T262Type">
     <xs:sequence>
-      <xs:element type="xs:string" name="AirQualityImpact"/>
-      <xs:element type="xs:string" name="InformationImpactAirQuality"/>
+      <xs:element type="xs:string" name="AirQualityImpact" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="InformationImpactAirQuality">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="T264Type">
@@ -260,7 +274,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="AmmoniaEmissionsControlPracticesPage"/>
+      <xs:element type="xs:string" name="AmmoniaEmissionsControlPracticesPage" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="AmmoniaEmissionsControlPracticesExactly">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -269,7 +283,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="AmmoniaEmissionsControlPracticesExactlyReason"/>
+      <xs:element type="xs:string" name="AmmoniaEmissionsControlPracticesExactlyReason" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="AmmoniaEmissionsLivestockQuestion">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -293,7 +307,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element name="AmmoniaEmissionsLivestockExactly">
+      <xs:element name="AmmoniaEmissionsLivestockExactly" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="yes"/>
@@ -301,8 +315,8 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="AmmoniaEmissionsLivestockExactlyReason"/>
-      <xs:element type="xs:string" name="AmmoniaEmissionsLivestockPage"/>
+      <xs:element type="xs:string" name="AmmoniaEmissionsLivestockExactlyReason" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="AmmoniaEmissionsLivestockPage" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="FineParticulateMatterEmissionsQuestion">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -361,7 +375,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element name="InorganicFertilisersExactly">
+      <xs:element name="InorganicFertilisersExactly" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="yes"/>
@@ -369,8 +383,8 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="InorganicFertilisersExactlyReason"/>
-      <xs:element type="xs:string" name="InorganicFertilisersPage"/>
+      <xs:element type="xs:string" name="InorganicFertilisersExactlyReason" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="InorganicFertilisersPage" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="NationalAdvisoryCodeQuestion">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -390,7 +404,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="NationalAdvisoryCodeOther"/>
+      <xs:element type="xs:string" name="NationalAdvisoryCodeOther" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="OpenFieldBurningQuestion">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -424,8 +438,8 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="OpenFieldBurningExactlyReason"/>
-      <xs:element type="xs:string" name="OpenFieldBurningPage"/>
+      <xs:element type="xs:string" name="OpenFieldBurningExactlyReason" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="OpenFieldBurningPage" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="PreventingImpactsSmallFarmsQuestion">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -450,13 +464,13 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="InorganicFertilisersOther"/>
-      <xs:element type="xs:string" name="AmmoniaEmissionsLivestockOther"/>
+      <xs:element type="xs:string" name="InorganicFertilisersOther" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="AmmoniaEmissionsLivestockOther" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ReviewTimetableType">
     <xs:sequence>
-      <xs:element name="Finish">
+      <xs:element name="Finish" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="1990"/>
@@ -464,7 +478,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element> 
-      <xs:element name="Start">
+      <xs:element name="Start" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="1990"/>
@@ -476,7 +490,7 @@
   </xs:complexType>
   <xs:complexType name="T27Type">
     <xs:sequence>
-      <xs:element name="AdoptionPlannedYear">
+      <xs:element name="AdoptionPlannedYear" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="1990"/>
@@ -484,22 +498,22 @@
           </xs:restriction> 
         </xs:simpleType>
       </xs:element> 
-      <xs:element type="ReviewTimetableType" name="ReviewTimetable"/>
-      <xs:element type="xs:string" name="CoherenceQualityObjectives"/>
-      <xs:element type="xs:string" name="CoherencePlansProgrammes"/>
+      <xs:element type="ReviewTimetableType" name="ReviewTimetable" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="CoherenceQualityObjectives" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="CoherencePlansProgrammes" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="ReferenceType">
+  <xs:complexType name="ReferenceType" maxOccurs="unbounded" minOccurs="0">
     <xs:sequence>
       <xs:element type="xs:string" name="Text"/>
       <xs:element type="xs:string" name="Url"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="IndicatorsType">
+  <xs:complexType name="IndicatorsType" maxOccurs="unbounded" minOccurs="0">
     <xs:sequence>
-      <xs:element type="xs:string" name="Description"/>
-      <xs:element type="xs:string" name="Unit"/>
-      <xs:element name="InterimYearTarget1">
+      <xs:element type="xs:string" name="Description" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="Unit" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="InterimYearTarget1" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="1990"/>
@@ -507,7 +521,7 @@
           </xs:restriction> 
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:integer" name="InterimTarget1"/>
+      <xs:element type="xs:integer" name="InterimTarget1" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="InterimYearTarget2">
         <xs:simpleType>
           <xs:restriction base="xs:integer">
@@ -516,7 +530,7 @@
           </xs:restriction> 
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:integer" name="InterimTarget2"/>
+      <xs:element type="xs:integer" name="InterimTarget2" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="InterimYearTarget3">
         <xs:simpleType>
           <xs:restriction base="xs:integer">
@@ -525,7 +539,7 @@
           </xs:restriction> 
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:integer" name="InterimTarget3"/>
+      <xs:element type="xs:integer" name="InterimTarget3" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="InterimYearTarget4">
         <xs:simpleType>
           <xs:restriction base="xs:integer">
@@ -534,12 +548,12 @@
           </xs:restriction> 
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:integer" name="InterimTarget4"/>
+      <xs:element type="xs:integer" name="InterimTarget4" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="T27pType">
     <xs:sequence>
-      <xs:element type="xs:string" name="ConsultationComments"/>
+      <xs:element type="xs:string" name="ConsultationComments" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="ReferenceType" name="Reference" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="IndicatorsType" name="Indicators" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
@@ -547,8 +561,23 @@
   <xs:complexType name="Table1Type">
     <xs:sequence>
       <xs:element type="xs:string" name="isGroup"/>
+      <xs:element name="isGroup">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="group"/>
+            <xs:enumeration value="single"/>
+          </xs:restriction> 
+        </xs:simpleType>
+      </xs:element>
       <xs:element type="xs:string" name="Description"/>
-      <xs:element type="xs:string" name="BelongsToPackage"/>
+      <xs:element name="BelongsToPackage">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
       <xs:element name="ReportedAlready" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -557,8 +586,15 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="AgriculturalRelated"/>
-      <xs:element type="xs:string" name="PolicyGroup"/>
+      <xs:element name="AgriculturalRelated">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="PolicyGroup" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element name="SelectedForAdoption">
         <xs:simpleType>
           <xs:restriction base="xs:string">
