@@ -81,10 +81,6 @@
           "OpenFieldBurningQuestion": "no",
           "OpenFieldBurningBanEnforced": "no",
           "OpenFieldBurningBanExemptions": "no",
-          "OpenFieldBurning": null,
-          "OpenFieldBurningPage": null,
-          "OpenFieldBurningExactly": "yes",
-          "OpenFieldBurningExactlyReason": null,
 
           "NationalAdvisoryCodeQuestion": "no",
           "NationalAdvisoryCode": null,

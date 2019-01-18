@@ -190,7 +190,7 @@ webform.controller('NECsCtrl', ['$scope', '$rootScope', '$location', 'dataReposi
       pam.Table1.T264.InorganicFertilisers = "no";
 
       pam.Table1.T264.FineParticulateMatterEmissions = "no";
-      pam.Table1.T264.OpenFieldBurningExactly = "yes";
+      //pam.Table1.T264.OpenFieldBurningExactly = "yes";
       pam.Table1.T264.NationalAdvisoryCodeExactly = "yes";
 
       pam.Table1.T264.PreventingImpactsSmallFarms = "no";

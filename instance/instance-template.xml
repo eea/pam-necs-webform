@@ -91,12 +91,7 @@
                   <OpenFieldBurningQuestion>no</OpenFieldBurningQuestion>
                   <OpenFieldBurningBanEnforced>no</OpenFieldBurningBanEnforced>
                   <OpenFieldBurningBanExemptions>no</OpenFieldBurningBanExemptions>
-
-                  <OpenFieldBurning/>
-                  <OpenFieldBurningExactly>yes</OpenFieldBurningExactly>
-                  <OpenFieldBurningExactlyReason/>
-                  <OpenFieldBurningPage/>
-                  
+                
                   <PreventingImpactsSmallFarmsQuestion>no</PreventingImpactsSmallFarmsQuestion>
                   <SmallMicroFarmsFullAccountQuestion>no</SmallMicroFarmsFullAccountQuestion>
                   <SmallMicroFarmsExemptionsQuestion>no</SmallMicroFarmsExemptionsQuestion>
