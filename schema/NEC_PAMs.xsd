@@ -563,12 +563,11 @@
   </xs:complexType>
   <xs:complexType name="Table1Type">
     <xs:sequence>
-      <xs:element type="xs:string" name=""/>
       <xs:element name="isGroup">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="single"/>
             <xs:enumeration value="group"/>
+            <xs:enumeration value="single"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
