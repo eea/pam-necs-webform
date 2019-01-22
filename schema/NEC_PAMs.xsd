@@ -57,9 +57,23 @@
   </xs:complexType>
   <xs:complexType name="ImplementationType">
     <xs:sequence>
-      <xs:element type="xs:string" name="Start"/>
       <xs:element type="xs:string" name="Comment"/>
-      <xs:element type="xs:string" name="Finish"/>
+      <xs:element name="Start" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1990"/>
+            <xs:maxInclusive value="2050"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Finish" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1990"/>
+            <xs:maxInclusive value="9999"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="EntitiesType">
