@@ -214,12 +214,17 @@
                                         <!--<span class="info" tooltip="{{'Labels.Tooltip.Table1.PolicyGroup' | translate}}"></span> -->
                                     </td>
                                     <td class="small-10 columns">
-                                        <ui-select multiple ng-model="current.PAM.Table1.PolicyGroup" ng-required="temp.isGroup">
+                                        <ui-select multiple name="table1_PolicyGroup" ng-model="current.PAM.Table1.PolicyGroup" ng-required="temp.isGroup">
                                             <ui-select-match placeholder="">#{{$item.id}} - {{$item.Title}}</ui-select-match>
                                             <ui-select-choices ui-disable-choice="pam.Table1.BelongsToPackage == 'no'" repeat="pam.id as pam in instance.NEC_PAMs.NEC_PAM | filter: $select.search | individualPAM">
                                                 <div ng-bind-html="''+pam.id+' '+pam.Title | highlight: $select.search"></div>
                                             </ui-select-choices>
                                         </ui-select>
+                                    </td>
+                                    <td class="small-10 columns">
+                                        <div class="invalid-wrap" ng-show="ValidationEnabled && Table1.table1_PolicyGroup.$error.required">
+                                            <span translate="Labels.Validation.empty"></span>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -526,7 +531,7 @@
                                         <span translate="Labels.Validation.empty"></span>
                                     </div>
                                     <!-- BEGIN temporary solution to keep validation functional ng-hide="true" -->
-                                    <ui-select ng-hide="true" name="table1_UnionPolicy" name="table1_UnionPolicy" multiple ng-model="current.PAM.Table1.T261[0].UnionPolicy" ng-required="current.PAM.Table1.T261[0].UnionPolicyRelated === 'yes'">
+                                    <ui-select ng-hide="true" name="table1_UnionPolicy" name="table1_UnionPolicy" multiple ng-model="current.PAM.Table1.T261[0].UnionPolicies[0].UnionPolicy" ng-required="current.PAM.Table1.T261[0].UnionPolicyRelated === 'yes'">
                                         <ui-select-match></ui-select-match>
                                         <ui-select-choices repeat="item in treeData.unionPolicyData track by $index"></ui-select-choices>
                                     </ui-select>
