@@ -563,9 +563,24 @@
   </xs:complexType>
   <xs:complexType name="Table1Type">
     <xs:sequence>
-      <xs:element type="xs:string" name="isGroup"/>
+      <xs:element type="xs:string" name=""/>
+      <xs:element name="isGroup">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="single"/>
+            <xs:enumeration value="group"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
       <xs:element type="xs:string" name="Description"/>
-      <xs:element type="xs:string" name="BelongsToPackage"/>
+      <xs:element name="BelongsToPackage">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
       <xs:element name="ReportedAlready" maxOccurs="unbounded" minOccurs="0">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -574,7 +589,14 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="AgriculturalRelated"/>
+      <xs:element name="AgriculturalRelated">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
       <xs:element type="xs:string" name="PolicyGroup"/>
       <xs:element name="SelectedForAdoption">
         <xs:simpleType>

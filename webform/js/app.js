@@ -1349,6 +1349,13 @@ webform.controller('NECsCtrl', ['$scope', '$rootScope', '$location', 'dataReposi
         }
         console.log('11 ' + valid);
 
+        if(PAM.Table1.isGroup == 'group') {
+          if (
+              $scope.isNullEmpty(PAM.Table1.PolicyGroup)
+            ) { valid = false; }
+        }
+        console.log('12 ' + valid);
+
         $scope.temp.Validation['ID' + PAM.internalId] = {};
         $scope.temp.Validation['ID' + PAM.internalId]['Table1'] = valid;
       }      
