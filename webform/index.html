@@ -1124,16 +1124,17 @@
                                     </tr>
                                 </table>
                                 </div>
-                                <div class="rcorners">
+                                
+                                <div class="rcorners" ng-show="current.PAM.Table1.SelectedForAdoption == 'yes' || current.PAM.Table1.isGroup == 'single'">
                                     <h1>
                                  <span>Selected for adoptions - Table 2.7</span>
                                     </h1>
                                     <table>
                                     <!-- SelectedForAdoption -->
-                                    <td class="small-2 columns">
+                                    <td class="small-2 columns" ng-show="current.PAM.Table1.isGroup == 'single'">
                                         <label translate="Labels.Table1.SelectedForAdoption.label"></label>
                                     </td>
-                                    <td class="small-10 columns and">
+                                    <td class="small-10 columns end" ng-show="current.PAM.Table1.isGroup == 'single'">
                                         <span translate="Labels.Table1.yes"></span>
                                         <input id='SelectedForAdoption1' name='SelectedForAdoption' type='radio' ng-model='current.PAM.Table1.SelectedForAdoption' value='yes' />
                                         <span translate="Labels.Table1.no"></span>
