@@ -687,7 +687,7 @@ webform.controller('NECsCtrl', ['$scope', '$rootScope', '$location', 'dataReposi
             if (!instance.NEC_PAMs['@xmlns:xsi']) $scope.instance.NEC_PAMs['@xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance';                                   
             else $scope.instance.NEC_PAMs['@xmlns:xsi'] = instance.NEC_PAMs['@xmlns:xsi'];
 
-            if (!instance.NEC_PAMs['@xmlns:noNamespaceSchemaLocation']) $scope.instance.NEC_PAMs['@xmlns:noNamespaceSchemaLocation'] = 'http://dd.eionet.europa.eu/schema/mmr-necs/NEC_PAMs.xsd';                                   
+            if (!instance.NEC_PAMs['@xmlns:noNamespaceSchemaLocation']) $scope.instance.NEC_PAMs['@xmlns:noNamespaceSchemaLocation'] = 'http://dd.eionet.europa.eu/schemas/mmr-necs/NEC_PAMs.xsd';                                   
             else $scope.instance.NEC_PAMs['@xmlns:noNamespaceSchemaLocation'] = instance.NEC_PAMs['@xmlns:noNamespaceSchemaLocation'];
 
             if (!instance.NEC_PAMs['@xml:lang']) $scope.instance.NEC_PAMs['@xml:lang'] = 'en';                                   
