@@ -133,7 +133,7 @@ webform.controller('NECsCtrl', ['$scope', '$rootScope', '$location', 'dataReposi
     }
     
     $scope.emptyPreventingImpactsSmallFarmsObjects = function() {
-      $scope.current.PAM.Table1.T264[0].SmallMicroFarmsFullAccountQuestion = 'no';
+      //$scope.current.PAM.Table1.T264[0].SmallMicroFarmsFullAccountQuestion = 'no';
       $scope.current.PAM.Table1.T264[0].SmallMicroFarmsExemptionsQuestion = 'no';
     }
  
