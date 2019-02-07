@@ -129,7 +129,7 @@
           <xs:enumeration value="AG_NEC_Directive"/>
           <xs:enumeration value="WS_Landfill_Directive"/>
           <xs:enumeration value="WS_Waste_Directive"/>
-          <xs:enumeration value="WS_Landfill_Directive"/>
+          <xs:enumeration value="WS_Landfill_Directive_Revised"/>
           <xs:enumeration value="WS_Waste_Management_Framework_Directive"/>
           <xs:enumeration value="WS_Water_Treatment_Directive"/>
           <xs:enumeration value="EU_other"/>
