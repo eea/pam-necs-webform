@@ -450,25 +450,24 @@ webform.controller('NECsCtrl', ['$scope', '$rootScope', '$location', 'dataReposi
             $scope.projectionsScenarioTreeInstance.jstree(true).select_node ($scope.current.PAM.Table1.T261[0].ProjectionsScenario , true, false);
         }
   
-        if ($scope.current.PAM.Table1.T264[0].AmmoniaEmissionsControlPractices) {
+        if ($scope.current.PAM.Table1.T264[0].AmmoniaEmissionsControlPracticesQuestion) {
           $scope.ammoniaEmissionsControlPracticesTreeInstance.jstree(true).deselect_all(true);
           $scope.ammoniaEmissionsControlPracticesTreeInstance.jstree('close_all');
           $scope.ammoniaEmissionsControlPracticesTreeInstance.jstree(true).select_node ($scope.current.PAM.Table1.T264[0].AmmoniaEmissionsControlPractices , true, false);
         }
   
-        if ($scope.current.PAM.Table1.T264[0].InorganicFertilisers) {
+        if ($scope.current.PAM.Table1.T264[0].InorganicFertilisersQuestion) {
           $scope.inorganicFertilisersTreeInstance.jstree(true).deselect_all(true);
           $scope.inorganicFertilisersTreeInstance.jstree(true).select_node ($scope.current.PAM.Table1.T264[0].InorganicFertilisers , true, false);
         }
   
-        if ($scope.current.PAM.Table1.T264[0].AmmoniaEmissionsLivestock) {
+        if ($scope.current.PAM.Table1.T264[0].AmmoniaEmissionsLivestockQuestion) {
           $scope.ammoniaEmissionsLivestockTreeInstance.jstree(true).deselect_all(true);
           $scope.ammoniaEmissionsLivestockTreeInstance.jstree('close_all');
           $scope.ammoniaEmissionsLivestockTreeInstance.jstree(true).select_node ($scope.current.PAM.Table1.T264[0].AmmoniaEmissionsLivestock , true, false);
         }
-  
-        
-        if ($scope.current.PAM.Table1.T264[0].NationalAdvisoryCode) {
+
+        if ($scope.current.PAM.Table1.T264[0].NationalAdvisoryCodeQuestion) {
           $scope.nationalAdvisoryCodeTreeInstance.jstree(true).deselect_all(true);
           $scope.nationalAdvisoryCodeTreeInstance.jstree('close_all');
           $scope.nationalAdvisoryCodeTreeInstance.jstree(true).select_node ($scope.current.PAM.Table1.T264[0].NationalAdvisoryCode , true, false);
@@ -788,6 +787,9 @@ webform.controller('NECsCtrl', ['$scope', '$rootScope', '$location', 'dataReposi
       $scope.current.PAM = $scope.instance.NEC_PAMs.NEC_PAM[0];
     }
     $scope.defaultTempValues();
+
+    console.log('$scope.current.PAM');
+    console.log($scope.current.PAM);
     $timeout(function() { $scope.Webform.$setPristine(true); },0);
     //$scope.OverviewValidate()
   };
