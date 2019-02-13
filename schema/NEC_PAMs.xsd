@@ -127,8 +127,6 @@
           <xs:enumeration value="AG_CAP_Reform_2014_2020"/>
           <xs:enumeration value="AG_Nitrate_Directive"/>
           <xs:enumeration value="AG_NEC_Directive"/>
-          <xs:enumeration value="WS_Landfill_Directive"/>
-          <xs:enumeration value="WS_Waste_Directive"/>
           <xs:enumeration value="WS_Landfill_Directive_Revised"/>
           <xs:enumeration value="WS_Waste_Management_Framework_Directive"/>
           <xs:enumeration value="WS_Water_Treatment_Directive"/>
